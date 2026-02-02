@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-height: 100dvh;
+
+    margin: 0 auto;
+
+    max-width: 900px;
+
+    padding: 40px 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.box {
+    width: 100%;
+    padding: 48px 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
+    border: 1px solid;
+    border-radius: 16px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-size: 32px;
+    color: #222;
+}
+
+.text>h3 {
+    font-size: 28px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 24px;
+
+    border-radius: 8px;
+    background-color: #5f42f0;
+    box-shadow: 0 0 10px #a395eaa2;
+
+}
+
+button>h2 {
+    color: white;
+    font-size: 24px;
+}
+
+.pw-title {
+    font-size: 48px;
+}
+
+table {
+    width: 50%;
+}
+
+tr {
+    display: flex;
+}
+
+tr>th {
+    flex: 1;
+}
+
+tr>th {
+    padding: 10px 6px;
+}
+
+tr>th>button {
+    color: white;
+    padding: 12px 0;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+tr>th>button:active {
+    transform: scale(1.1);
+}
+
+.inputed-pw {
+    text-align: center;
+    width: 100%;
+    font-size: 48px;
+}
