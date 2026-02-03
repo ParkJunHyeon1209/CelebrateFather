@@ -11,13 +11,76 @@
         justify-content: center;
         align-items: center;
       }
+
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .img-wrap {
+        position: relative;
+      }
+
+      .card {
+        position: relative;
+        animation: insertCard 1.5s ease-in-out infinite;
+        z-index: 0;
+      }
+
+      .img-wrap::before {
+        content: "";
+        width: 50%;
+        height: 30px;
+        background-color: #444;
+        position: absolute;
+        border-radius: 6px;
+        top: 90%;
+        left: 25%;
+        z-index: 1;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      h2 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 32px;
+        color: #222;
+      }
+
+      @keyframes insertCard {
+        0% {
+          transform: translateY(0) rotate(-90deg);
+          opacity: 1;
+        }
+        90% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateY(20%) rotate(-90deg);
+          opacity: 0.8;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="wrap">
       <h1>본인 인증이 완료되었습니다.</h1>
-      <h2>카드를 그림과 같이 넣어주세요</h2>
-      <img src="./assets/images/card.png" alt="card" width="500px" />
+      <div class="img-wrap">
+        <img
+          src="./assets/images/card.png"
+          alt="card"
+          width="500px"
+          class="card"
+        />
+      </div>
+      <h2>카드를 그림과 같이 넣어주세요.</h2>
     </div>
   </body>
 </html>
