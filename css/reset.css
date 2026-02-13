@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    touch-action: manipulation;
+}
+
 body {
     font-family: 'Nanum Gothic', sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #ffffff;
 }
 
 html,
@@ -57,12 +64,6 @@ html {
     min-height: 100dvh;
 }
 
-body {
-    min-height: 100vh;
-    min-height: 100dvh;
-    background-color: #ffffff;
-}
-
 ol,
 ul {
     list-style: none;
@@ -77,8 +78,4 @@ a {
 button {
     background-color: transparent;
     cursor: pointer;
-}
-
-body {
-    touch-action: manipulation;
 }
